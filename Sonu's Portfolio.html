@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonu's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div id="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo"><B>SONU'S PORTIFOLIO</B></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certified">Certified</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <button id="modeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" data-aos="fade-up">
+    <img src="image/sku8766.png" alt="My Photo" style="width: 300px; height: 300px; border-radius:80%; object-fit: cover;" align="right">
+    <h1><b><u>Hello, I'm 😊 <span id="typed"></span></u></b></h1>
+    <p ><B><b><u>WELCOME TO MY PORTIFOLIO WEBSITE.</u></b></B></p>
+    <a href="https://drive.google.com/file/d/1_R8gnWcje_d4gYg6heB71OXrcswpWEmY/view?usp=drive_link" download class="btn-download">Download Resume</a>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2><B><u>About Me</u></B></h2>
+    <p><B>Hello, I'm SONU KUMAR UPADHYAY, a passionate Frontend Web Developer with 06 months of hands-on experience in building responsive and user-friendly websites.
+
+I specialize in HTML, CSS, and JavaScript, and I enjoy turning ideas into real, functional, and clean websites. I focus on writing clean code, creating smooth user experiences, and building mobile-friendly layouts.
+
+I’m constantly learning and improving my skills to stay updated with the latest trends in frontend development.
+
+Currently, I'm open to new opportunities where I can contribute, learn, and grow as a developer. Let’s connect and create something great together!</B></p>
+
+<div class="info-section">
+    <div class="info-box">
+      <div class="column">
+        <p><span>Birthday</span> / 08th November 2005</p>
+        <p><span>Age</span> / 20 Yr</p>
+        <p><span>Residence</span> / India</p>
+        <p><span>Address</span> / Rohtas, Bihar (India)</p>
+      </div>
+      <div class="column">
+        <p><span>E-mail</span> / sonukumarupadhyay75@gmail.com</p>
+        <p><span>Phone</span> / +91 8294255694</p>
+        <p><span>Instagram</span> / sonu_upadhyay_5354</p>
+        <p><span>Github</span> / upad5694coders</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="skills" data-aos="fade-up">
+    <h2><u><B>Skills</B></u></h2>
+    <div class="filter-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="programming">Programming</button>
+      <button class="filter-btn" data-filter="websites">Websites</button>
+    </div>
+    <div class="skill-list">
+      <div class="skills-card" data-category="websites" data-percent="95%">Portfolio<br>Website</div>
+      <div class="skills-card" data-category="programming" data-percent="90%">HTML<br>CSS<br>JS</div>
+      <div class="skills-card" data-category="programming" data-percent="85%">Python</div>
+      <div class="skills-card" data-category="programming" data-percent="80%">MySQL</div>
+      <div class="skills-card" data-category="programming" data-percent="75%">MariaDB</div>
+      <div class="skills-card" data-category="programming" data-percent="70%">MongoDB</div>
+      <div class="skills-card" data-category="programming" data-percent="68%">C<br>Programming</div>
+    </div>
+  </section>
+
+  <section id="Certified" data-aos="fade-up">
+    <h2><u><B>Certified</B></u></h2>
+
+  <div class="certified-list">
+      <div class="certified-card" data-category="Web Designing">Web<br>Designing</div>
+      <div class="certified-card" data-category="Ethical Hacker">Ethical<br>Hacker</div>
+      <div class="certified-card" data-category="Python Essential 1">Python<br>Essential<br>1</div>
+      <div class="certified-card" data-category="Python Essential 2">Python<br>Essential<br>2</div>
+      <div class="certified-card" data-category="IoT-Internet Of Things">IoT<br>Internet<br>Of<br>Things</div>
+    </div>
+  </section>
+
+  <section class="education">
+    <h2>Academic</h2>
+    <ul class="timeline">
+      <li><strong>2023 to 2026:</strong><B> Diploma in Computer Science Engineering (Continue in Last Year)</B></li>
+      <li><strong>2020:</strong><B> Matric (BSEB - 68.8%)</B></li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2><B><u>Contact Me</u></B></h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit"><B>Send</B></button>
+      <p id="formMsg"></p>
+    </form>
+
+    <div class="map-container">
+      <!-- Replace this iframe src with your own map location -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=gc43Y46UdydUbeoq5"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p><B>&copy;2025 Sonu's Portfolio. All right reserved.</B></p>
+    <div class="social-icons">
+      <div class="icons">
+       <!-- WhatsApp -->
+  <a href="https://wa.me/+918294255694" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/sonu_upadhyay_5354" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a> 
+
+  <!-- Twitter -->
+  <a href="https://twitter.com/yourusername" target="_blank">
+    <i class="fab fa-twitter"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/sonu-kumar-upadhyay-8b13aa361" target="_blank">
+    <i class="fab fa-linkedin"></i>
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/upad5694coders" target="_blank">
+    <i class="fab fa-github"></i>
+  </a>
+    </div>
+  </div>
+  </footer>
+
+  <button id="backToTop">↑</button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    const typed = new Typed("#typed", {
+      strings: ["Sonu Kumar Upadhyay.","Web Developer.", "Designer.", "Freelancer."],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
